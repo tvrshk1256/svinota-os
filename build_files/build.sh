@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y java-1.8.0-openjdk.x86_64 java-11-openjdk.x86_64 java-17-openjdk.x86_64 java-21-openjdk.x86_64 thunderbird transmission-qt vlc gedit spectacle timeshift
+dnf5 install -y java-21-openjdk.x86_64 thunderbird transmission-qt vlc gedit spectacle timeshift
 flatpak install -y io.github.peazip.PeaZip
 
 # Use a COPR Example:
