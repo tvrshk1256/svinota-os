@@ -10,9 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y java-21-openjdk.x86_64 thunderbird transmission-qt vlc gedit spectacle timeshift
-flatpak install -y io.github.peazip.PeaZip
-
+dnf5 install -y java-21-openjdk.x86_64 ark thunderbird transmission-qt vlc gedit spectacle timeshift
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
