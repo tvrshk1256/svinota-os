@@ -10,7 +10,8 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y java-1.8.0-openjdk java-11-openjdk java-17-openjdk java-21-openjdk java-25-openjdk tmux man nano fastfetch htop firefox thunderbird transmission-qt vlc gedit spectacle timeshift
+flatpak install -y io.github.peazip.PeaZip
 
 # Use a COPR Example:
 #
@@ -20,5 +21,3 @@ dnf5 install -y tmux
 # dnf5 -y copr disable ublue-os/staging
 
 #### Example for enabling a System Unit File
-
-systemctl enable podman.socket
